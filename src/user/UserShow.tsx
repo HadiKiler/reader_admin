@@ -8,7 +8,7 @@ export const UserShow = () => (
             <TextField source="email" />
             <ImageField source="image" />
             <TextField source="bio" />
-            <BooleanField source="is_staff" />
+            <BooleanField source="is_superuser" />
         </SimpleShowLayout>
     </Show>
 );

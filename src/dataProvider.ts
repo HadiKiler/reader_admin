@@ -51,7 +51,7 @@ type UserParams = {
     src?: string;
     title?: string;
   };
-  is_staff: string;
+  is_superuser: string;
 };
 
 type CategoryParams = {
@@ -76,7 +76,7 @@ const createUserFormData = (
   params.data.email && formData.append("email", params.data.email);
   params.data.bio && formData.append("bio", params.data.bio);
   params.data.image?.rawFile && formData.append("image", params.data.image.rawFile);
-  params.data.is_staff && formData.append("is_staff", params.data.is_staff);
+  params.data.is_superuser && formData.append("is_superuser", params.data.is_superuser);
 
   return formData;
 };

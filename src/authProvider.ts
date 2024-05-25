@@ -63,6 +63,7 @@ const authProvider = {
           })
           .then(auth => {
                 localStorage.setItem('auth', JSON.stringify(auth));
+                location.reload()
           })
           .catch((err) => {
               throw new Error('username or password error')

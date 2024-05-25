@@ -11,7 +11,7 @@ export const UserEdit = () => (
             <ImageInput source="image" accept="image/*" validate={[required()]}>
                 <ImageField source="src" title="title" />
             </ImageInput>
-            <BooleanInput source="is_staff" />
+            <BooleanInput source="is_superuser" />
         </SimpleForm>
     </Edit>
 );
